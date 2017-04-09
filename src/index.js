@@ -11,6 +11,7 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
+    //we display the react router instead of the App component here
     <Router history={browserHistory} routes={routes} />
   </Provider>
   , document.querySelector('.container'));
