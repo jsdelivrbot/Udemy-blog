@@ -1,9 +1,12 @@
 import axios from 'axios';
 
 export const FETCH_POSTS = 'FETCH_POSTS';
+<<<<<<< HEAD
 export const CREATE_POST = 'CREATE_POST';
 export const FETCH_POST = 'FETCH_POST';
 export const DELETE_POST = 'DELETE_POST';
+=======
+>>>>>>> parent of 5562f88... create new post path is complete
 
 const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
 const API_KEY = '?key=tere123';
@@ -16,6 +19,7 @@ export function fetchPosts() {
     payload: request
   };
 }
+<<<<<<< HEAD
 
 export function createPost(props) {
   const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, props);
@@ -43,3 +47,5 @@ export function deletePost(id) {
     payload: request
   };
 }
+=======
+>>>>>>> parent of 5562f88... create new post path is complete
